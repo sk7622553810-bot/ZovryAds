@@ -1,0 +1,11 @@
+# Telegram bot API and user-account client
+aiogram==3.32.0
+telethon==1.45.0
+
+# MongoDB access and DNS resolution for MongoDB SRV connection strings
+pymongo==4.20.0
+dnspython==2.9.2
+
+# Encrypted hosted-account sessions and environment-file loading
+cryptography==50.0.2
+python-dotenv==1.2.4

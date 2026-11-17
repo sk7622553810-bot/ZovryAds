@@ -1,0 +1,25 @@
+services:
+  - type: worker
+    name: zovryads
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: TELEGRAM_API_ID
+        sync: false
+      - key: TELEGRAM_API_HASH
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: LOGGER_BOT_TOKEN
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: ADMIN_ID
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
